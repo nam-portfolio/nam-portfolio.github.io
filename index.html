@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nam's Engineering Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Simple fade-in animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-8 text-center shadow-lg">
+    <h1 class="text-3xl font-bold">Nam's Engineering Portfolio</h1>
+    <nav class="mt-4 space-x-6">
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold mb-8 text-center">Featured Projects</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 fade-in-up fade-delay-1">
+        <img src="https://via.placeholder.com/600x400" alt="Robotics Arm" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Robotics Arm</h3>
+          <p class="mt-2 text-sm text-gray-600">Designed and built a robotic arm using 3D-printed parts, STM32, and inverse kinematics.</p>
+          <a href="https://github.com/YOURUSERNAME/robotic-arm" target="_blank" class="mt-4 inline-block text-blue-600 hover:text-blue-800">View on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 fade-in-up fade-delay-2">
+        <img src="https://via.placeholder.com/600x400" alt="IoT Network" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">IoT Sensor Network</h3>
+          <p class="mt-2 text-sm text-gray-600">Developed a wireless IoT system for real-time temperature & humidity monitoring using LoRa.</p>
+          <a href="https://github.com/YOURUSERNAME/iot-sensor-network" target="_blank" class="mt-4 inline-block text-blue-600 hover:text-blue-800">View on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 fade-in-up fade-delay-3">
+        <img src="https://via.placeholder.com/600x400" alt="3D Printing" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">3D Printed Drone</h3>
+          <p class="mt-2 text-sm text-gray-600">Created a lightweight drone frame with custom electronics and autonomous flight software.</p>
+          <a href="https://github.com/YOURUSERNAME/3d-drone" target="_blank" class="mt-4 inline-block text-blue-600 hover:text-blue-800">View on GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+    <p class="text-gray-700">Hi, I’m Nam! I’m an engineer passionate about electronics, programming, and robotics. I enjoy turning ideas into working projects and sharing my process online.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-16 text-center">
+    <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+    <p>Email: <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/YOURUSERNAME</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Nam N. All rights reserved.</p>
+  </footer>
+</body>
+</html>
